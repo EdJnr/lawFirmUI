@@ -12,29 +12,34 @@ const navConfig = [
     icon: icon('ic_analytics'),
   },
   {
-    title: 'user',
+    title: 'User Bookings',
     path: '/dashboard/user',
     icon: icon('ic_user'),
   },
   {
-    title: 'product',
+    title: 'Add Home Tag',
     path: '/dashboard/products',
     icon: icon('ic_cart'),
   },
   {
-    title: 'blog',
+    title: 'Add About Tag',
     path: '/dashboard/blog',
     icon: icon('ic_blog'),
   },
   {
-    title: 'login',
+    title: 'Add Service Tag',
     path: '/login',
     icon: icon('ic_lock'),
   },
   {
-    title: 'Not found',
+    title: 'Raison D\'etre Tag',
     path: '/404',
     icon: icon('ic_disabled'),
+  },
+  {
+    title: 'Add Booking Date',
+    path: '/404',
+    icon: icon('ic_cart'),
   },
 ];
 

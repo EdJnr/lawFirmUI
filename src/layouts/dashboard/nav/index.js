@@ -15,6 +15,9 @@ import NavSection from '../../../components/nav-section';
 //
 import navConfig from './config';
 
+import brand from '../../../assets/lawfirmlogo.jpg'
+
+
 // ----------------------------------------------------------------------
 
 const NAV_WIDTH = 280;
@@ -53,9 +56,12 @@ export default function Nav({ openNav, onCloseNav }) {
         '& .simplebar-content': { height: 1, display: 'flex', flexDirection: 'column' },
       }}
     >
-      <Box sx={{ px: 2.5, py: 3, display: 'inline-flex' }}>
-        <Logo />
+      <Box sx={{mx:2.5, my:5, height: 60, width:60}}>
+        <img style={{width:'100%', height : '100%'}} src={brand} alt='logo'/>
       </Box>
+      {/* <Box sx={{ px: 2.5, py: 3, display: 'inline-flex' }}>
+        <Logo />
+      </Box> */}
 
       <Box sx={{ mb: 5, mx: 2.5 }}>
         <Link underline="none">
@@ -78,30 +84,6 @@ export default function Nav({ openNav, onCloseNav }) {
       <NavSection data={navConfig} />
 
       <Box sx={{ flexGrow: 1 }} />
-
-      <Box sx={{ px: 2.5, pb: 3, mt: 10 }}>
-        <Stack alignItems="center" spacing={3} sx={{ pt: 5, borderRadius: 2, position: 'relative' }}>
-          <Box
-            component="img"
-            src="/assets/illustrations/illustration_avatar.png"
-            sx={{ width: 100, position: 'absolute', top: -50 }}
-          />
-
-          <Box sx={{ textAlign: 'center' }}>
-            <Typography gutterBottom variant="h6">
-              Get more?
-            </Typography>
-
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              From only $69
-            </Typography>
-          </Box>
-
-          <Button href="https://material-ui.com/store/items/minimal-dashboard/" target="_blank" variant="contained">
-            Upgrade to Pro
-          </Button>
-        </Stack>
-      </Box>
     </Scrollbar>
   );
 
